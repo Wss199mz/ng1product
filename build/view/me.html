@@ -1,0 +1,37 @@
+<style>
+    .me img{
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .me .name{
+        margin-top: 25px;
+    }
+    .me .btns{
+        margin-top: 40px;
+        width: 150px;
+        height: 95px;
+        background-color:#12bd55;;
+        color: #fff;
+        font-size: 16px;
+    }
+    .me .btns:last-child{
+        width: 340px;
+        height: 40px;
+        margin-top: 20px;
+        background-color: red;
+    }
+</style>
+<div class="me ta-c">
+    <div ng-if="name?name:''">
+        <img src="{{image?image: 'image/head.png'}}" alt="">
+        <span class="d-b name" style="margin-top: 20px" ui-sref="post" ng-bind="name?name:''"></span>
+        <button class="btns" ui-sref="favorite">投递</button>
+        <button class="btns" ui-sref="post">收藏</button>
+        <button class="btns" ng-click="logout()">退出登录</button>
+    </div>
+    <div ng-hide="name" style="position: fixed;top: 0;left: 0;right: 0;
+        background-image: url('image/background.png');margin: 0;width: 100%;height: 100%;">
+        <button class="btns login-btn" ui-sref="login" style="margin-top: 250px">去登陆</button>
+    </div>
+</div>

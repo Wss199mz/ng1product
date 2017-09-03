@@ -1,0 +1,48 @@
+<style>
+    .login form{
+        margin-top: 40px !important;
+    }
+    .login .form-line>p,.login .message-warp>p{
+        margin: 0;
+        text-align: left;
+        padding-left: 50px;
+        font-size: 14px;
+        color: lightcoral;
+    }
+    .login .form-line input{
+        margin-top: 10px;
+    }
+   .message{
+        color: gray;!important;
+        border: 1px solid gray;
+    }
+</style>
+<div class="login">
+    <form class="d-b ta-c" name="form" style="margin-top: 220px">
+        <div class="form-line" >
+            <input ng-model="username" name="username" validator="phone" class="d-ib" type="number" placeholder="请输入手机号"
+                   style="background: rgba(0,0,0,0.2);color: #fff;outline-width: 0" ng-required="true"
+                   ng-maxlength="11" ng-minlength="11">
+            <p  ng-if="form.username.$error.required">用户名不能为空</p>
+            <p  ng-if="form.username.$error.maxlength">必须是11位手机号</p>
+            <p  ng-if="form.username.$error.minlength">必须是11位手机号</p>
+        </div>
+        <div class="form-line">
+            <input  class="d-ib" ng-model="password" name="password" required validator="password" type="password" placeholder="请输入密码"
+                    style="background: rgba(0,0,0,0.2);color: #fff;outline-width: 0" maxlength="15" minlength="6">
+            <p class="form-control-static" ng-show="form.password.$error.required">密码输入不能为空</p>
+            <p  ng-if="form.password.$error.maxlength">用户名长度不能大于15位</p>
+            <p  ng-if="form.password.$error.minlength">用户名长度必须大于6位</p>
+        </div>
+        <div class="message-warp" style="margin-top: 40px">
+            <input ng-model="code" ng-model="verification" required name="verification" id="message-box" type="text" placeholder="短信验证码"
+                   style="background: rgba(0,0,0,0.2);color: #fff;
+               outline-width: 0;width: 190px;height: 40px;font-size: 14px;
+               margin-left: -40px">
+            <span class=" {{time?'message':''}}" ng-click="time?1==1:send()" ng-bind="time?time:'发送短息'"></span>
+            <p  ng-show="form.verification.$error.required">验证码不能为空</p>
+        </div>
+        <button class="login-btn" ui-sref="login">登陆</button>
+        <button class="register-btn" ng-click="submit()" ng-disabled="form.$invalid">   注册</button>
+    </form>
+</div>

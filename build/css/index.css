@@ -1,0 +1,372 @@
+.head {
+  background-color: #12bd55;
+  padding-left: 0.26666667rem;
+  padding-right: 0.26666667rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.head .text {
+  color: #fff;
+}
+.head .custom {
+  background: #feae11;
+  border-color: #feae11;
+  color: #fff;
+  border-style: dashed;
+  margin-top: 0.21333333rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.head .back-btn {
+  font-size: 25px;
+  width: 1rem;
+}
+.head .position-text {
+  margin-left: -1rem;
+}
+.bg-w {
+  background-color: #fff;
+}
+.c-w {
+  color: #fff;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-b {
+  display: block;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-r {
+  text-align: right;
+}
+.ta-c {
+  text-align: center;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.p-r {
+  position: relative;
+}
+.p-a {
+  position: absolute;
+}
+.foot {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #d4d4d4;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+.foot li {
+  font-size: 20px;
+  width: 33%;
+  text-align: center;
+  color: #9f9d9e;
+}
+.foot li.select {
+  background-color: #dbf9f4;
+  color: #01c2a3;
+}
+.foot .icon-document {
+  width: 25px;
+  height: 21px;
+  background: url("../../image/document.png");
+}
+.foot .icon-search {
+  width: 25px;
+  height: 21px;
+  background: url("../../image/search.png");
+}
+.foot .icon-my {
+  width: 24px;
+  height: 24px;
+  background: url("../../image/my.png");
+}
+.position-list {
+  margin: 0;
+  padding: 0;
+}
+.position-list .item {
+  margin: 0;
+  padding: 7px;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+}
+.position-list .item .logo {
+  width: 1.73333333rem;
+  height: 1.73333333rem;
+  margin-right: 13px;
+}
+.position-list .item .title {
+  margin: 8px 0;
+}
+.position-list .item .text {
+  margin: 0;
+}
+.bottom-btn {
+  position: fixed;
+  height: 1.2rem;
+  background-color: #12bd55;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: #fff;
+}
+.position-desc {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.position-desc h5 {
+  margin-top: 0;
+  margin-left: 10px;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.position-desc .pre {
+  padding-left: 10px;
+  margin-left: 0;
+}
+.position-info {
+  border-bottom: 1px solid #ccc;
+  padding: 26px 10px 18px 10px;
+}
+.position-info .ml {
+  margin-left: 13px;
+}
+.position-info .ml-red {
+  color: red;
+}
+.position-info img {
+  position: absolute;
+  right: 24px;
+  top: 75px;
+}
+.company-info {
+  padding: 20px 15px 13px 85px;
+  position: relative;
+}
+.company-info img {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 15px;
+}
+.company-info p {
+  margin-top: 0;
+}
+.position-class {
+  background-color: #fff;
+  border-top: 1px solid #d4d4d4;
+  padding: 13px 9px 5px 9px;
+}
+.position-class h5 {
+  margin: 0 0 35px 0;
+}
+.position-class button {
+  background-color: rgba(18, 213, 18, 0.2);
+  padding: 10px 23px;
+  border-radius: 20px;
+  margin-right: 11px;
+  float: none;
+}
+.position-class button.active {
+  background: #12bd55;
+  color: #fff;
+}
+.position-class ul {
+  border-top: 1px solid #d4d4d4;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.position-class ul li {
+  list-style: none;
+}
+.position-class ul li span {
+  color: red;
+  right: 20px;
+  top: 30px;
+}
+.search-bar {
+  background-color: #12bd55;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.search-bar img {
+  transform: scale(0.7);
+}
+.search-bar input {
+  border-radius: 80px;
+  background-color: #eee;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 0.53333333rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  width: 5.06666667rem;
+  outline-width: 0;
+}
+.search-bar button {
+  background-color: #12bd55;
+}
+.search-bar button:first-child {
+  color: #fff;
+  margin-left: .3rem;
+  margin-top: .2rem;
+}
+.search-bar button:last-child {
+  color: #fff;
+  background: url("../../image/search.png") no-repeat;
+  background-size: 15px 15px;
+  background-position: 0 4px;
+  margin: .2rem 1.3rem 0 0 ;
+  padding-left: 20px;
+}
+.search-list {
+  margin-top: 2.13333333rem;
+}
+.search-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #2B2B2B;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+.tab {
+  background-color: #f7f7f7;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  top: 0;
+  margin-top: 1.06666667rem;
+  font-size: 0;
+}
+.tab li {
+  font-size: 0.37333333rem;
+  width: 33.3%;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  border-bottom: 2px solid #eee;
+}
+.tab li.active {
+  border-bottom: 2px solid #12bd55;
+}
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+}
+.sheet .wrap {
+  background-color: #EEEEEE;
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 100;
+}
+.sheet .wrap ul {
+  margin-top: 0;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  max-height: 500px;
+}
+.sheet .wrap ul li {
+  width: 100%;
+  list-style: none;
+  color: #1063e5;
+  border-bottom: 1px solid #d4d4d4;
+}
+.sheet .wrap li,
+.sheet .wrap button {
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  width: 100%;
+}
+.login {
+  background-image: url(../image/background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.login form {
+  margin-top: 3rem;
+}
+.login form input {
+  margin: 0 auto;
+  width: 8rem;
+  height: 1.06666667rem;
+  border: none;
+}
+.login form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  float: none;
+}
+.login form button.login-btn {
+  background: #00ADB9;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 75px;
+}
+.login form button.register-btn {
+  margin-top: 20px;
+  background-color: #C1DFDE;
+  color: #20A7AE;
+  border: 1px solid #20A7AE;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 0.42666667rem;
+  background-color: #eee;
+}
+button {
+  border: none;
+}

@@ -1,0 +1,27 @@
+<style>
+    p{
+        margin: 0;
+        text-align: left;
+        padding-left: 50px;
+        font-size: 14px;
+        color: lightcoral;
+    }
+</style>
+<div class="login">
+    <form class="d-b ta-c" name="myForm">
+        <div class="form-line">
+            <input ng-model="username" name="username" required class="d-ib name" type="number" placeholder="请输入手机号"
+           style="background: rgba(0,0,0,0.2);color: #fff;outline-width: 0" maxlength="11" minlength="11">
+            <p ng-show="myForm.username.$error.required">用户名不能为空</p>
+            <p ng-show="myForm.username.$error.maxlength">必须是11位手机号</p>
+            <p ng-show="myForm.username.$error.minlength">必须是11位手机号</p>
+        </div>
+        <div class="form-line">
+            <input  ng-model="password" name="password" required class="d-ib" type="text" placeholder="请输入密码"
+            style="background: rgba(0,0,0,0.2);color: #fff;outline-width: 0">
+            <p ng-show="myForm.password.$error.required">密码输入不能为空</p>
+        </div>
+        <button class="login-btn" ng-click="submit()" ng-disabled="myForm.$invalid">登陆</button>
+        <button class="register-btn" ui-sref="register">注册</button>
+    </form>
+</div>
