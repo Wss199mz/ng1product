@@ -138,7 +138,7 @@ angular.module('app').controller('loginCtrl',['$cacheFactory','$http','$state','
  */
 'use strict';
 angular.module('app').controller('mainCtrl',['$http','$scope',function ($http,$scope) {
-    $http.get('/data/positionList.json').then(function (res) {
+    $http.get('data/positionList.json').then(function (res) {
         $scope.list = res.data
         console.log($scope.list)
     })
@@ -157,7 +157,7 @@ angular.module('app').controller('meCtrl',['$state','$cacheFactory','$http','$sc
     //     $scope.name = JSON.parse(res[1]).name
     //     myAppCache.put('item1', $scope.name);
     // }
-    var item = $cacheFactory.get('myAppCache')
+    var item = $cacheFactory.get('myAppCache');
     if ($cacheFactory.get('myAppCache')) {
         $scope.name = $cacheFactory.get('myAppCache').get('item').name;
         $scope.image = $cacheFactory.get('myAppCache').get('item').image;
