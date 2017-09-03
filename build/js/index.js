@@ -282,7 +282,7 @@ angular.module('app').controller('registerCtrl',['$interval','$http','$scope','$
 angular.module('app').controller('searchCtrl',['$http','$state','$scope','dict','$rootScope',function ($http,$state,$scope,dict,$rootScope) {
     $scope.name = ""
     $scope.search = function () {
-        $http.get('data/positionList.json?name='+$scope.name).then(function (res) {
+        $http.get('../data/positionList.json?name='+$scope.name).then(function (res) {
             $scope.positionList = res.data
         })
     }
