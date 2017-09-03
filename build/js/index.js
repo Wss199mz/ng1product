@@ -138,7 +138,7 @@ angular.module('app').controller('loginCtrl',['$cacheFactory','$http','$state','
  */
 'use strict';
 angular.module('app').controller('mainCtrl',['$http','$scope',function ($http,$scope) {
-    $http.get('../data/positionList.json').then(function (res) {
+    $http.get('/data/positionList.json').then(function (res) {
         $scope.list = res.data
         console.log($scope.list)
     })
@@ -282,7 +282,7 @@ angular.module('app').controller('registerCtrl',['$interval','$http','$scope','$
 angular.module('app').controller('searchCtrl',['$http','$state','$scope','dict','$rootScope',function ($http,$state,$scope,dict,$rootScope) {
     $scope.name = ""
     $scope.search = function () {
-        $http.get('../data/positionList.json?name='+$scope.name).then(function (res) {
+        $http.get('data/positionList.json?name='+$scope.name).then(function (res) {
             $scope.positionList = res.data
         })
     }
